@@ -9,29 +9,20 @@ ea.videoPlayer = (function (_) {
     var metadata = [
         {
             id: 1,
-            name: 'What is GEAR?',
-            src: '/media/What%20is%20GEAR.mp4',
-            poster: '/media/What%20is%20GEAR.png',
-            vtt: '/media/What%20is%20GEAR.txt',
+            name: 'What is EARP?',
+            src: '/media/1.mp4',
+            poster: '/media/1.png',
+            vtt: '/media/1.txt',
             duration: '1:46',
             desc: ''
         },
         {
             id: 2,
-            name: 'Navigating the GEAR Homepage',
-            src: '/media/Navigating%20the%20GEAR%20Homepage.mp4',
-            poster: '/media/Navigating%20the%20GEAR%20Homepage.png',
-            vtt: '/media/Navigating%20the%20GEAR%20Homepage.txt',
+            name: 'Navigating the EARP Homepage',
+            src: '/media/2.mp4',
+            poster: '/media/2.png',
+            vtt: '/media/2.txt',
             duration: '2:02',
-            desc: ''
-        },
-		{
-            id: 3,
-            name: 'Organization Chart',
-            src: '/media/Demo%20Video%203%20Organization%20Chart%20Final.mp4',
-            poster: '/media/Demo%20Video%203%20Organization%20Chart%20Final.png',
-            vtt: '/media/Demo%20Video%203%20Organization%20Chart%20Final.txt',
-            duration: '1:38',
             desc: ''
         },
     ];

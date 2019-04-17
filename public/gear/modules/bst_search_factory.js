@@ -1,6 +1,6 @@
 /* eslint-disable */
 
-// NOTE: This module is NOT for GEAR v2 consideration and written for the
+// NOTE: This module is NOT for EARP v2 consideration and written for the
 //       3rd party Bootstrap Tables plugin and its 4th party extensions.
 //       Ideally, we'll replace Bootstrap Tables with something that suits our
 //       needs better, such as Data-Tables. Bootstrap Tables is better suited

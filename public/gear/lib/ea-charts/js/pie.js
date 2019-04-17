@@ -68,7 +68,7 @@ gsaea.pie = module.exports = (function () {
                 .then(render)
                 .then(renderLegend);
         } else {
-            console.warn('[GSAEA PIE] No dataset or data URL found to process.');
+            console.warn('[EARP PIE] No dataset or data URL found to process.');
         }
     };
 
@@ -137,13 +137,13 @@ gsaea.pie = module.exports = (function () {
     var enableResize = function () {
         $(window).bind('resize', onWindowResize);
     };
-	
-	var onWindowResize = function () {
-		_.debounce(function () {
-			width = 'auto';
-			bootstrap();
-		}, 200);
-	}
+
+  var onWindowResize = function () {
+    _.debounce(function () {
+      width = 'auto';
+      bootstrap();
+    }, 200);
+  }
 
     var openApplicationsReport = function ($location, $scope, name) {
         $location.path('/applications_BySSO/' + name);

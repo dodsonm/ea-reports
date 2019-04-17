@@ -6,8 +6,8 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 
 const content = {
-  tstamp: `27 JUL 2018 NOON`,
-  pageTitle: `GEAR 2.0 Pre-Release Admin Portal`,
+  tstamp: `4 JUL 2020 NOON`,
+  pageTitle: `EARP 2.0 Pre-Release Admin Portal`,
 }
 
 const styles = {

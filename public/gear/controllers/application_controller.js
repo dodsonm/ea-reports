@@ -16,7 +16,7 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
   $scope.bstFilter = {};
   $scope.tableFilterList = [];
   $scope.hasUsedSearchForm = false;
-  
+
 
   // Method to create Applications table
   $scope.createAppTable = function () {
@@ -72,7 +72,7 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
             "DesktopComponent": val.DesktopComponent,
 
             "OMBUID": val.OMBUID,
-			"ProdYear": val.ProdYear
+      "ProdYear": val.ProdYear
           });
         }
       });
@@ -83,128 +83,128 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
       // init call and mutate options/properties a little more cleanly
       $scope.bsTableConfig = {
         columns: [
-		{
+    {
           field: 'Name',
           title: 'Application Name',
           sortable: true
         },
-		{
+    {
           field: 'Alias',
           title: 'Alias',
           sortable: true,
           visible: false
         },
-		{
+    {
           field: 'Description',
           title: 'Description',
           sortable: true
         },
-		{
+    {
           field: 'SSO',
           title: 'SSO',
           sortable: true
         },
-		{
+    {
           field: 'SSOLong',
           title: 'SSO (Long)',
           sortable: true,
-		  visible: false
+      visible: false
         },
-		{
+    {
           field: 'Owner',
           title: 'Two Letter Org (Long)',
           sortable: true,
-		  visible: false
+      visible: false
         },
-		{
+    {
           field: 'OwnerShort',
           title: 'Two Letter Org (Short)',
           sortable: true
         },
-		{
+    {
           field: 'BusinessPOC',
           title: 'Business POC',
           sortable: true,
           visible: false
         },
-		{
+    {
           field: 'TechnicalPOC',
           title: 'Technical POC',
           sortable: true,
           visible: false
         },
-		{
+    {
           field: 'System',
           title: 'Parent System',
           sortable: true,
         },
-		{
+    {
           field: 'RegionClassification',
           title: 'Region Classification',
           sortable: true,
           visible: false
         },
-		{
+    {
           field: 'IsRevenueGenerator',
           title: 'Revenue Generator',
           sortable: true,
           visible: false
-		},
-		{
+    },
+    {
           field: 'HostingProvider',
           title: 'Hosting Provider',
           sortable: true,
           visible: false
         },
-		{
+    {
           field: 'Cloud',
           title: 'Cloud',
           sortable: true,
           visible: false
         },
-		{
+    {
           field: 'TechnologyPlatform',
           title: 'Platform',
           sortable: true,
           visible: false
         },
-		{
+    {
           field: 'Status',
           title: 'Status',
           sortable: true
         },
-		 {
+     {
           field: 'ProdYear',
           title: 'Production Year',
           sortable: true,
           visible: false
         },
-		{
+    {
           field: 'FismaSystem',
           title: 'FISMA System',
           sortable: true,
           visible: false
         },
-		// {
+    // {
           // field: 'Id',
           // title: 'Id',
           // sortable: true,
           // visible: false
         // },
-		{
+    {
           field: 'Investment',
           title: 'Investment',
           sortable: true,
           visible: false
 
         },
-		{
+    {
           field: 'OMBUID',
           title: 'Application ID',
           sortable: true,
           visible: false
         },
-		],
+    ],
         data: $scope.bstData
       }
 
@@ -245,7 +245,7 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
             "Description": val.Description,
             "SSO": val.SSOShort,
             "Owner": val.Owner,
-			"OwnerShort": val.OwnerShort,
+      "OwnerShort": val.OwnerShort,
             "System": val.ParentSystem,
             "BusinessPOC": val.BusinessPOC,
             "TechnicalPOC": val.TechnicalPOC,
@@ -262,7 +262,7 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
             "DesktopComponent": val.DesktopComponent,
             "RetiredYear" : val.RetiredYear,
             "OBMUID": val.OMBUID,
-			"ProdYear": val.ProdYear
+      "ProdYear": val.ProdYear
           });
         }
       });
@@ -274,100 +274,100 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
           title: 'Application Name',
           sortable: true
         },
-		{
+    {
           field: 'Alias',
           title: 'Alias',
           sortable: true,
           visible: false
         },
-		{
+    {
           field: 'Description',
           title: 'Description',
           sortable: true
         },
-		{
+    {
           field: 'SSO',
           title: 'SSO',
           sortable: true
         },
-		{
+    {
           field: 'Owner',
           title: 'Two Letter Org (Long)',
           sortable: true,
-		  visible: false
+      visible: false
         },
-		{
+    {
           field: 'OwnerShort',
           title: 'Two Letter Org (Short)',
           sortable: true,
-		  visible: false
+      visible: false
         },
-		{
+    {
           field: 'System',
           title: 'Parent System',
           sortable: true,
         },
-		{
+    {
           field: 'RegionClassification',
           title: 'Region Classification',
           sortable: true,
           visible: false
         },
-		{
+    {
           field: 'IsRevenueGenerator',
           title: 'Revenue Generator',
           sortable: true,
           visible: false
-		},
-		{
+    },
+    {
           field: 'HostingProvider',
           title: 'Hosting Provider',
           sortable: true,
           visible: false
         },
-		{
+    {
           field: 'Cloud',
           title: 'Cloud',
           sortable: true,
           visible: false
         },
-		{
+    {
           field: 'TechnologyPlatform',
           title: 'Platform',
           sortable: true,
           visible: false
         },
-		{
+    {
           field: 'Status',
           title: 'Status',
           sortable: true
         },
-		{
+    {
           field: 'ProdYear',
           title: 'Production Year',
           sortable: true,
           visible: false
         },
-		{
+    {
           field: 'FismaSystem',
           title: 'FISMA System',
           sortable: true,
           visible: false
         },
-		// {
+    // {
           // field: 'Id',
           // title: 'Id',
           // sortable: true,
           // visible: false
         // },
-		{
+    {
           field: 'Investment',
           title: 'Investment',
           sortable: true,
           visible: false
 
         },
-		{
+    {
           field: 'RetiredYear',
           title: 'Retired Year (CY)',
           sortable: true
@@ -378,7 +378,7 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
           sortable: true,
           visible: false
         }
-		],
+    ],
         data: $scope.bstData
       }
       bstSearchUtils.updateConfig($scope);
@@ -397,7 +397,7 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
     var time = [];
     var appname = '';
     var owner = '';
-	var sso = '';
+  var sso = '';
     var id = '';
     var notes = '';
     var fy14 = '';
@@ -407,7 +407,7 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
     var fy18 = '';
     var fy19 = '';
     var fy20 = '';
-	var fy21 = '';
+  var fy21 = '';
     var status = '';
     var parentsystem = '';
     appstime.$promise.then(function (populateTIME) {
@@ -417,7 +417,7 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
         $scope.bstData = [];
         $.each(appstime, function (key, val) {
           sso = val.SSOShort;
-		  appname = val.Name;
+      appname = val.Name;
           owner = val.OwnerShort;
           id = val.AppId;
           notes = val.Notes;
@@ -429,7 +429,7 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
           fy18 = val.FY18;
           fy19 = val.FY19;
           fy20 = val.FY20;
-		  fy21 = val.FY21;
+      fy21 = val.FY21;
           $.each(apps, function (key, val) {
             if (val.Name == appname){
               status = val.Status;
@@ -444,10 +444,10 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
           if (status != 'Retired') {
             $scope.bstData.push({
               "Owner" : owner,
-			  "SSO" : sso,
+        "SSO" : sso,
               "Name" : appname,
               "Status" : status,
-			  "ProdYear": val.ProdYear,
+        "ProdYear": val.ProdYear,
               "FY14" : fy14,
               "FY15" : fy15,
               "FY16" : fy16,
@@ -455,15 +455,15 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
               "FY18" : fy18,
               "FY19" : fy19,
               "FY20" : fy20,
-			  "FY21" : fy21,
+        "FY21" : fy21,
               "ParentSystem" : parentsys,
               "Id" : id,
               "Notes" : notes,
               "Alias" : val.Alias,
               "RegionClassification" : val.RegionClassification,
-			  "OwnerLongName": val.Owner,
-			  "BusinessPOC": val.BusinessPOC,
-			  "TechnicalPOC": val.TechnicalPOC,
+        "OwnerLongName": val.Owner,
+        "BusinessPOC": val.BusinessPOC,
+        "TechnicalPOC": val.TechnicalPOC,
         "OMBUID" : val.OMBUID
             });
           }
@@ -471,114 +471,114 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
         bstSearchUtils.checkFilterState($scope);
         $scope.bsTableConfig = {
           columns: [
-		  {
+      {
             field: 'SSO',
             title: 'SSO',
             visible: false,
             sortable: true
           },
-		  {
+      {
             field: 'Owner',
             title: 'Two Letter Org (Short)',
             sortable: true,
           },
-		  {
+      {
             field: 'OwnerLongName',
             title: 'Two Letter Org (Long)',
             visible: false,
             sortable: true
           },
-		  {
+      {
             field: 'Alias',
             title: 'Alias',
             sortable: true,
             visible: false
           },
-		  {
+      {
             field: 'Name',
             title: 'Application Name',
             sortable: true
           },
-		  {
+      {
             field: 'ParentSystem',
             title: 'Parent System',
             sortable: true,
             visible: false
           },
-		  {
+      {
             field: 'Status',
             title: 'Status',
             sortable: true
           },
-		  {
+      {
           field: 'ProdYear',
           title: 'Production Year',
           sortable: true,
           visible: false
-			},
-		  // {
+      },
+      // {
             // field: 'Id',
             // title: 'Id',
             // visible: false,
             // sortable: true
           // },
-		  {
+      {
             field: 'FY14',
             title: 'FY14',
             visible: false
           },
-		  {
+      {
             field: 'FY15',
             title: 'FY15',
             visible: false
           },
-		  {
+      {
             field: 'FY16',
             title: 'FY16',
             visible: false
           },
-		  {
+      {
             field: 'FY17',
             title: 'FY17',
-			visible: false
+      visible: false
           },
-		  {
+      {
             field: 'FY18',
             title: 'FY18'
           },
-		  {
+      {
             field: 'FY19',
             title: 'FY19'
           },
-		  {
+      {
             field: 'FY20',
             title: 'FY20'
           },
-		  {
+      {
             field: 'FY21',
             title: 'FY21'
           },
-		  {
+      {
             field: 'Notes',
             title: 'Notes',
             visible: false,
             sortable: true
 
           },
-		  {
+      {
             field: 'BusinessPOC',
             title: 'Business POC',
             visible: false,
             sortable: true
 
           },
-		  {
+      {
             field: 'TechnicalPOC',
             title: 'Technical POC',
             visible: false,
             sortable: true
           },
-		  {
+      {
             field: 'RegionClassification',
             title: 'Region Classification',
             visible: false,
@@ -618,7 +618,7 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
     $scope.rootPath = '/systems';
     // Use the System 'query' method to send an appropriate GET request
     var systems = ParentSystemsSrc.query();
-	$scope.system = systems[0];
+  $scope.system = systems[0];
     systems.$promise.then(function (populateData) {
       $scope.bstData = systems;
       bstSearchUtils.checkFilterState($scope);
@@ -636,13 +636,13 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
           title: 'SSO',
           sortable: true
         }
-		// , {
+    // , {
           // field: 'Id',
           // title: 'Id',
           // sortable: true,
           // visible: false
         // }
-		],
+    ],
         data: $scope.bstData
       };
       bstSearchUtils.updateConfig($scope);
@@ -668,7 +668,7 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
     });
     // Use the Application 'get' method to send an appropriate GET request
     var system = ParentSystemsSrc.query({ id: $routeParams.id });
-	var application = SysAppSrc.query({ id: $routeParams.id });
+  var application = SysAppSrc.query({ id: $routeParams.id });
     var sysid = '';
     system.$promise.then(function (populateData) {
       $.each(system, function (key, val) {
@@ -680,7 +680,7 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
       });
 
 
-	      system.$promise.then(function () {
+        system.$promise.then(function () {
       $.each(system, function (key, sys) {
         if (sys.Id == $routeParams.id) {
           $scope.sysId = sys.Id;
@@ -689,11 +689,11 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
           $scope.sysParent = sys.Parent;
 
           application.$promise.then(function () {
-          
+
             var interfaces = InterfacesSrc.query({ sys: sys.Name });
             $scope.tempname = sys.Name;
             $scope.systype = 'sys';
-			
+
             interfaces.$promise.then(function () {
               $.each(application, function (i, app) {
                    // if (app.Owner == org.Name)
@@ -710,94 +710,94 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
         };
       });
     });
-	  
-	  
-		var sysapp = SysAppSrc.query({ id: $routeParams.id });
+
+
+    var sysapp = SysAppSrc.query({ id: $routeParams.id });
         sysapp.$promise.then(function (populateData) {
 
-		$('#sysapptable').bootstrapTable({
+    $('#sysapptable').bootstrapTable({
           columns: [{
             field: 'Name',
             title: 'Application Name',
             sortable: true
           },
-		  {
+      {
             field: 'Description',
             title: 'Description',
             sortable: true
           },
-		  {
+      {
             field: 'Alias',
             title: 'Alias',
             sortable: true,
             visible: false
           },
-		  {
+      {
             field: 'SSOShort',
             title: 'SSO',
             sortable: true
           },
-		  {
+      {
             field: 'Owner',
             title: 'Two Letter Org (Long)',
             sortable: true,
             visible: false
           },
-		  {
+      {
             field: 'OwnerShort',
             title: 'Two Letter Org (Short)',
             sortable: true
           },
-		  // {
+      // {
             // field: 'Id',
             // title: 'Id',
             // sortable: true,
             // visible: false
           // }
 
-		  {
+      {
             field: 'BusinessPOC',
             title: 'Business POC',
             sortable: true,
             visible: false
           },
-		  {
+      {
             field: 'TechnicalPOC',
             title: 'Technical POC',
             sortable: true,
             visible: false
           },
-		  		{
+          {
           field: 'RegionClassification',
           title: 'Region Classification',
           sortable: true,
           visible: false
         },
-		{
+    {
           field: 'IsRevenueGenerator',
           title: 'Revenue Generator',
           sortable: true,
           visible: false
-		},
-		{
+    },
+    {
           field: 'HostingProvider',
           title: 'Hosting Provider',
           sortable: true,
           visible: false
         },
-		{
+    {
           field: 'Cloud',
           title: 'Cloud',
           sortable: true,
           visible: false
         },
-		{
+    {
           field: 'TechnologyPlatform',
           title: 'Platform',
           sortable: true,
           visible: false
         },
-			                 {
+                       {
                   field: 'FY14',
                   title: 'FY14',
                   visible: false
@@ -815,27 +815,27 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
                 {
                   field: 'FY17',
                   title: 'FY17',
-				  visible: false
+          visible: false
                 },
                 {
                   field: 'FY18',
                   title: 'FY18',
-				  visible: false
+          visible: false
                 },
                 {
                   field: 'FY19',
                   title: 'FY19',
-				  visible: false
+          visible: false
                 },
                 {
                   field: 'FY20',
                   title: 'FY20',
-				  visible: false
+          visible: false
                 },
-				{
+        {
                   field: 'FY21',
                   title: 'FY21',
-				  visible: false
+          visible: false
                 },
                 {
                   field: 'Notes',
@@ -843,30 +843,30 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
                   visible: false
 
                 },
-		{
+    {
           field: 'Status',
           title: 'Status',
           sortable: true
         },
-		 {
+     {
           field: 'ProdYear',
           title: 'Production Year',
           sortable: true,
           visible: false
         },
-		{
+    {
           field: 'FISMASystem',
           title: 'FISMA System',
           sortable: true,
           visible: false
         },
-		// {
+    // {
           // field: 'Id',
           // title: 'Id',
           // sortable: true,
           // visible: false
         // },
-		{
+    {
           field: 'Investment',
           title: 'Investment',
           sortable: true,
@@ -880,7 +880,7 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
           visible: false
         }],
           data: sysapp//appgroup
-		//});
+    //});
         });
       });
     });
@@ -911,8 +911,8 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
     pocs = AppPOCsSrc.query({ id: appId }),
     time = AppTIMESrc.query({ id: appId }),
     interfaces = AppInterfacesSrc.query({ id: appId });
-	
-		
+
+
     application.$promise.then(function (d) {
       // rule is multiple Links are single string, delimited with a comma
       if(!!application[0].Link && application[0].Link.indexOf(',') > -1) {
@@ -949,50 +949,50 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
       time.$promise.then(function () {
         $('#apptimetable').bootstrapTable({
           columns: [
-		  {
+      {
             field: 'FY14',
             title: 'FY14',
             visible: false
           },
-		  {
+      {
             field: 'FY15',
             title: 'FY15',
             visible: false
           },
-		  {
+      {
             field: 'FY16',
             title: 'FY16',
             visible: false
           },
-		  {
+      {
             field: 'FY17',
             title: 'FY17',
-			visible: false
+      visible: false
           },
-		  {
+      {
             field: 'FY18',
             title: 'FY18'
           },
-		  {
+      {
             field: 'FY19',
             title: 'FY19'
           },
-		  {
+      {
             field: 'FY20',
             title: 'FY20'
           },
-		  {
+      {
             field: 'FY21',
             title: 'FY21'
           },
-		  {
+      {
             field: 'Notes',
             title: 'Notes',
             // visible: false,
             sortable: true
 
           },
-		],
+    ],
           data: time
         });
       });
@@ -1000,32 +1000,32 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
       capabilities.$promise.then(function () {
         $('#appcaptable').bootstrapTable({
           columns: [
-		{
+    {
             field: 'Ref',
             title: 'Hierarchy number',
         //    sortable: true
           },
-		{
+    {
             field: 'Name',
             title: 'Business Capability',
             sortable: true
           },
-		{
+    {
             field: 'Description',
             title: 'Description',
             sortable: true
           },
-		// {
+    // {
             // field: 'Id',
             // title: 'Id',
             // visible: false
           // },
-		{
+    {
             field: 'ParentCap',
             title: 'Parent Capability',
             visible: false
           }
-		],
+    ],
           data: capabilities
         });
       });
@@ -1033,40 +1033,40 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
       technologies.$promise.then(function () {
         $('#apptechtable').bootstrapTable({
           columns: [
-		{
+    {
             field: 'Name',
             title: 'Technology',
             sortable: true
           },
-		{
+    {
             field: 'Description',
             title: 'Description',
             sortable: true
           },
-		{
+    {
             field: 'Status',
             title: 'Status',
             sortable: true
           },
-		{
+    {
           field: 'ProdYear',
           title: 'Production Year',
           sortable: true,
           visible: false
         },
-		{
+    {
             field: 'Category',
             title: 'Software Category',
             sortable: true,
-			visible: false
+      visible: false
           },
-		{
+    {
             field: 'Expiration',
             title: 'Approved Status Expiration Date',
             sortable: true,
-			visible: false
+      visible: false
           },
-		],
+    ],
           data: technologies
         });
       });
@@ -1094,7 +1094,7 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
     }
   });
 
-  
+
   $scope.createInterfaceSSOChart = function (appId, orgName, type) {
 
     // TODO: there are better ways filtering Interfaces. Let's choose one that isn't dependent on args like this. -mld
@@ -1106,7 +1106,7 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
       return false;
     }
 
-	var data = [];
+  var data = [];
 
     if (appId && !orgName) {
       interfaces = AppInterfacesSrc.query({ id: appId });
@@ -1114,40 +1114,40 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
       interfaces = InterfacesSrc.query({ sys: orgName });
     } else if (!appId && orgName) {
       interfaces = InterfacesSrc.query({ owner: orgName });
-	} else {
+  } else {
       interfaces = InterfacesSrc.query();
     }
 
-	$scope.interfaces = interfaces;
+  $scope.interfaces = interfaces;
     interfaces.$promise.then(function (populateData) {
-		$.each(interfaces,function(key,val){
-			if (val.System1 == null)
-				val.System1 = 'None';
-			if (val.System2 == null)
-				val.System2 = 'None';
-			
-			data.push({
-				"AppID1":val.AppID1,
-				"AppID2":val.AppID2,
-				"Name1":val.Name1,
-				"Name2":val.Name2,
-				"NameShort1":val.NameShort1,
-				"NameShort2":val.NameShort2,
-				"SSO1":val.SSO1,
-				"SSO2":val.SSO2,
-				"SSOShort1":val.SSOShort1,
-				"SSOShort2":val.SSOShort2,
-				"Owner1":val.Owner1,
-				"Owner2":val.Owner2,
-				"OwnerShort1":val.OwnerShort1,
-				"OwnerShort2":val.OwnerShort2,
-				"System1":val.System1,
-				"System2":val.System2,
-				"count": 1,		
+    $.each(interfaces,function(key,val){
+      if (val.System1 == null)
+        val.System1 = 'None';
+      if (val.System2 == null)
+        val.System2 = 'None';
 
-			})
-		})
-	  //Constants for the SVG
+      data.push({
+        "AppID1":val.AppID1,
+        "AppID2":val.AppID2,
+        "Name1":val.Name1,
+        "Name2":val.Name2,
+        "NameShort1":val.NameShort1,
+        "NameShort2":val.NameShort2,
+        "SSO1":val.SSO1,
+        "SSO2":val.SSO2,
+        "SSOShort1":val.SSOShort1,
+        "SSOShort2":val.SSOShort2,
+        "Owner1":val.Owner1,
+        "Owner2":val.Owner2,
+        "OwnerShort1":val.OwnerShort1,
+        "OwnerShort2":val.OwnerShort2,
+        "System1":val.System1,
+        "System2":val.System2,
+        "count": 1,
+
+      })
+    })
+    //Constants for the SVG
       var w = $('#' + CONTAINER_ID).parents('.panel-body').width(),
       h = 650;
 
@@ -1155,27 +1155,27 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
       if (!w) {
         w = 930; // best fit @1280px screen width in IE11
       }
-		var mpr = chordMpr(data);
+    var mpr = chordMpr(data);
 
-			mpr
-			  .addValuesToMap("NameShort1")
+      mpr
+        .addValuesToMap("NameShort1")
 
-			  .setFilter(function (row, a, b) {
+        .setFilter(function (row, a, b) {
             return (row.NameShort1 === a.name && row.NameShort2 === b.name);
-			  })
-			  .setAccessor(function (recs, a, b) {
-				if (!recs[0]) return 0;
-				return +recs[0].count;
-			  });
+        })
+        .setAccessor(function (recs, a, b) {
+        if (!recs[0]) return 0;
+        return +recs[0].count;
+        });
 
-			drawChords(mpr.getMatrix(), mpr.getMap(), type);
-	//	}) 
-	function drawChords (matrix, mmap, type) {
+      drawChords(mpr.getMatrix(), mpr.getMap(), type);
+  //	})
+  function drawChords (matrix, mmap, type) {
 
-		var r1 = h / 2, r0 = 0.6 * r1;
+    var r1 = h / 2, r0 = 0.6 * r1;
 
-		var color = d3.scale.category20b();
-		var fill = d3.scale.ordinal()
+    var color = d3.scale.category20b();
+    var fill = d3.scale.ordinal()
                  .range(['#6b6ecf','#b5cf6b','#e7ba52','#d6616b','#de9ed6','#393b79','#637939',	'#8c6d31','#843c39','#7b4173','#ce6dbd','#9c9ede','#cedb9c','#e7cb94','#e7969c','#5254a3','#8ca252','#bd9e39','#ad494a','#a55194',])
 
       var chord = d3.layout.chord()
@@ -1195,12 +1195,12 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
 
 
       var svg = d3.select('#' + CONTAINER_ID).append("svg")
-		  .attr("width",  w)
-		  .attr("height",  h)
-		  .attr("id", SVG_ID)
-		  .append("svg:g")
-	//            .attr("id", "circle")
-		  .attr("transform", "translate(" + w/2 + "," + h/2 + ")");
+      .attr("width",  w)
+      .attr("height",  h)
+      .attr("id", SVG_ID)
+      .append("svg:g")
+  //            .attr("id", "circle")
+      .attr("transform", "translate(" + w/2 + "," + h/2 + ")");
 
       // if(mmapsize <=2){
             // svg.attr("transform", "translate(" + w / 2 + "," + h / 2 + ") rotate(57) ");}
@@ -1215,20 +1215,20 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
             .enter().append("svg:g")
             .attr("class", "group")
 
-			// .attr("data-legend",function(d) { return d.name})
+      // .attr("data-legend",function(d) { return d.name})
             .on("mouseover", mouseover)
             .on("mouseout", function (d) { d3.select("#tooltip1").style("visibility", "hidden") })
-			.on("click", mouseclick);
+      .on("click", mouseclick);
 
 
         g.append("svg:path")
             .style("stroke", "black")
-            .style("fill", function(d) { 
-				if (type ==='sys')
-					return fill(rdr(d).gsystem);
-				else				
-					return fill(rdr(d).gownershort); 
-				})//d.index  //group color control, colored by owner 2 letter office
+            .style("fill", function(d) {
+        if (type ==='sys')
+          return fill(rdr(d).gsystem);
+        else
+          return fill(rdr(d).gownershort);
+        })//d.index  //group color control, colored by owner 2 letter office
             .attr("d", arc);
 
         g.append("svg:text")
@@ -1247,53 +1247,53 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
 
 
 
-		 //Insert Legend
-		    var legend = svg.selectAll(".legend")
+     //Insert Legend
+        var legend = svg.selectAll(".legend")
 
-			  .data(fill.domain())
-			  .enter().append("g")
-			  .attr("class", "legend")
-			  .attr("transform", function(d, i) { return "translate( 0," + (i * 17 - h/2 + 30) + ")"; }); //"translate(" + w / 6 + "," + h / 4 + ")"  " + (- w/15) + "
+        .data(fill.domain())
+        .enter().append("g")
+        .attr("class", "legend")
+        .attr("transform", function(d, i) { return "translate( 0," + (i * 17 - h/2 + 30) + ")"; }); //"translate(" + w / 6 + "," + h / 4 + ")"  " + (- w/15) + "
 
 
 
-			  legend.append("rect")
-			  .attr("x", w/2 - 45)
-			  .attr("width", 13)
-			  .attr("height", 14)
-			  .style("fill", fill);
+        legend.append("rect")
+        .attr("x", w/2 - 45)
+        .attr("width", 13)
+        .attr("height", 14)
+        .style("fill", fill);
 
-			  legend.append("text")
-			  .attr("x", w/2 - 50)
-			  .attr("y", 8)
-			  .attr("dy", ".25em")
+        legend.append("text")
+        .attr("x", w/2 - 50)
+        .attr("y", 8)
+        .attr("dy", ".25em")
         .style("font-size", "14px")
         .style("font-weight", "bold")
-			  .style("text-anchor", "end")
-			  .text(function(d) { return d; });  
-		
-		var legendtitle;
-		if (type === 'sys')
-			legendtitle = 'Related System';
-		else
-			legendtitle = 'Organization';
-		
-			svg.append("text")
-			.attr("transform", function(d, i) { return "translate( 0," + (- h/2 + 30) + ")"; })
-			.attr("x", w/2 - 45)             
-			.attr("y", -15)
-			.style("font-size", "16px")
-			.style("font-weight", "bold")
-			.style("text-anchor", "end")			
-			.text(legendtitle);
-			  
+        .style("text-anchor", "end")
+        .text(function(d) { return d; });
+
+    var legendtitle;
+    if (type === 'sys')
+      legendtitle = 'Related System';
+    else
+      legendtitle = 'Organization';
+
+      svg.append("text")
+      .attr("transform", function(d, i) { return "translate( 0," + (- h/2 + 30) + ")"; })
+      .attr("x", w/2 - 45)
+      .attr("y", -15)
+      .style("font-size", "16px")
+      .style("font-weight", "bold")
+      .style("text-anchor", "end")
+      .text(legendtitle);
+
 
         var chordPaths = svg.selectAll("path.chord")
                 .data(chord.chords())
                 .enter().append("svg:path")
                 .attr("class", "chord")
                 .style("stroke-opacity", .4) // set the stroke opacity
-                .style("stroke", "#3182bd")      // set the line colour, #3182bd seems GSA Blue
+                .style("stroke", "#3182bd")      // set the line colour, #3182bd seems Blue
                 .style("fill", "#c6dbef")      // set the fill colour
                 .attr("d", d3.svg.chord().radius(r0))
                 .on("mouseover", function (d) {
@@ -1305,8 +1305,8 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
                 })
                 .on("mouseout", function (d) { d3.select("#tooltip1").style("visibility", "hidden") });
 
-			g.attr("transform", "translate(-80,0)");
-			chordPaths.attr("transform", "translate(-80,0)");
+      g.attr("transform", "translate(-80,0)");
+      chordPaths.attr("transform", "translate(-80,0)");
 
         function chordTip (d) {
             var p = d3.format(".2%"), q = d3.format(",.1r")
@@ -1343,7 +1343,7 @@ function ($route, $scope, $http, $routeParams, $filter, $location, $sce, $window
           }
       }
 
-	})
+  })
   }
 
   }

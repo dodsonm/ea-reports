@@ -205,95 +205,95 @@ function ($route,$scope, $http, $routeParams, $filter, $location, $sce,
 
           $('#orgapptable').bootstrapTable({
             columns: [
-			{
+      {
               field: 'Name',
               title: 'Application Name',
               sortable: true
             },
-			{
+      {
               field: 'Alias',
               title: 'Alias',
               sortable: true,
-			  visible: false
+        visible: false
             },
-			{
+      {
               field: 'Description',
               title: 'Description',
               sortable: true,
-			  // visible: false
+        // visible: false
             },
-			{
+      {
               field: 'SSOShort',
               title: 'SSO',
               sortable: true,
-			  visible: false
+        visible: false
             },
-						{
+            {
               field: 'SSO',
               title: 'SSO (Long)',
               sortable: true,
-			  visible: false
+        visible: false
             },
-		    {
+        {
               field: 'Owner',
               title: 'Two Letter Org (Long)',
               sortable: true,
-			  visible: false
+        visible: false
             },
-		    {
+        {
               field: 'OwnerShort',
               title: 'Two Letter Org (Short)',
               sortable: true
             },
-			{
+      {
               field: 'BusinessPOC',
               title: 'Business POC',
               sortable: true,
-			  visible: false
+        visible: false
             },
-			{
+      {
               field: 'TechnicalPOC',
               title: 'Technical POC',
               sortable: true,
-			  visible: false
+        visible: false
             },
-			{
+      {
               field: 'ParentSystem',
               title: 'Parent System',
               sortable: true,
-			  visible: false
+        visible: false
             },
-					{
+          {
           field: 'RegionClassification',
           title: 'Region Classification',
           sortable: true,
           visible: false
         },
-		{
+    {
           field: 'IsRevenueGenerator',
           title: 'Revenue Generator',
           sortable: true,
           visible: false
-		},
-		{
+    },
+    {
           field: 'HostingProvider',
           title: 'Hosting Provider',
           sortable: true,
           visible: false
         },
-		{
+    {
           field: 'Cloud',
           title: 'Cloud',
           sortable: true,
           visible: false
         },
-		{
+    {
           field: 'TechnologyPlatform',
           title: 'Platform',
           sortable: true,
           visible: false
         },
-			                 {
+                       {
                   field: 'FY14',
                   title: 'FY14',
                   visible: false
@@ -311,27 +311,27 @@ function ($route,$scope, $http, $routeParams, $filter, $location, $sce,
                 {
                   field: 'FY17',
                   title: 'FY17',
-				  visible: false
+          visible: false
                 },
                 {
                   field: 'FY18',
                   title: 'FY18',
-				  visible: false
+          visible: false
                 },
                 {
                   field: 'FY19',
                   title: 'FY19',
-				  visible: false
+          visible: false
                 },
                 {
                   field: 'FY20',
                   title: 'FY20',
-				  visible: false
+          visible: false
                 },
-				 {
+         {
                   field: 'FY21',
                   title: 'FY21',
-				  visible: false
+          visible: false
                 },
                 {
                   field: 'Notes',
@@ -339,31 +339,31 @@ function ($route,$scope, $http, $routeParams, $filter, $location, $sce,
                   visible: false
 
                 },
-		{
+    {
           field: 'Status',
           title: 'Status',
           sortable: true,
-		  visible: false
+      visible: false
         },
-		{
+    {
           field: 'ProdYear',
           title: 'Production Year',
           sortable: true,
           visible: false
         },
-		{
+    {
           field: 'FismaSystem',
           title: 'FISMA System',
           sortable: true,
           visible: false
         },
-		// {
+    // {
           // field: 'Id',
           // title: 'Id',
           // sortable: true,
           // visible: false
         // },
-		{
+    {
           field: 'Investment',
           title: 'Investment',
           sortable: true,
@@ -377,13 +377,13 @@ function ($route,$scope, $http, $routeParams, $filter, $location, $sce,
           visible: false
         }
 
-			// {
+      // {
               // field: 'Id',
               // title: 'Id',
               // sortable: true,
               // visible: false
             // }
-			],
+      ],
             data: appmap//orgappnames
           });
         });
@@ -431,13 +431,13 @@ function ($route,$scope, $http, $routeParams, $filter, $location, $sce,
           title: 'Parent',
           sortable: true
         }
-		// , {
+    // , {
           // field: 'Id',
           // title: 'Id',
           // sortable: true,
           // visible: false
         // }
-		],
+    ],
         data: $scope.bstData
       };
       bstSearchUtils.updateConfig($scope);
@@ -767,7 +767,7 @@ $scope.createCapabilityTree = function () {
 
     var rootNode = {
       Id: 17433,
-      Name: 'Manage GSA',
+      Name: 'Manage',
       Parent: null,
       AppCount: 0,
       RefNum: null,
@@ -784,7 +784,7 @@ $scope.createCapabilityTree = function () {
       }
     });
 
-    var root =  _.tree(capApps,'Manage GSA','name', 'pname');
+    var root =  _.tree(capApps,'Manage','name', 'pname');
 
       var margin = {top: 20, right: 0, bottom: 0, left: 0},
       width = $('#buschart').width(),
@@ -1082,7 +1082,7 @@ $scope.createCapabilityTree = function () {
                   title: 'SSO (Short)',
                   sortable: true,
               visible: false
-              
+
                 },
                 {
                   field: 'OwnerShort',
@@ -1105,14 +1105,14 @@ $scope.createCapabilityTree = function () {
                   title: 'Alias',
                   sortable: true,
                   visible: false
-                },		
+                },
                 {
                   field: 'Description',
                   title: 'Description',
                   sortable: true,
                   visible: false
                 },
-		
+
                 {
                   field: 'ParentSystem',
                   title: 'Parent System',
@@ -1124,13 +1124,13 @@ $scope.createCapabilityTree = function () {
                   title: 'Status',
                   sortable: true
                 },
-				{
-				  field: 'ProdYear',
-				  title: 'Production Year',
-				  sortable: true,
-				  visible: false
-				},
-				
+        {
+          field: 'ProdYear',
+          title: 'Production Year',
+          sortable: true,
+          visible: false
+        },
+
                 {
                   field: 'FY14',
                   title: 'FY14',
@@ -1149,7 +1149,7 @@ $scope.createCapabilityTree = function () {
                 {
                   field: 'FY17',
                   title: 'FY17',
-				  visible: false
+          visible: false
                 },
                 {
                   field: 'FY18',
@@ -1185,7 +1185,7 @@ $scope.createCapabilityTree = function () {
                   sortable: true,
                   visible: false
                 },
-								{
+                {
                   field: 'RegionClassification',
                   title: 'Region Classification',
                   sortable: true,
